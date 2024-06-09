@@ -67,8 +67,6 @@ const Navbar = () => {
     );
 }
 
-<<<<<<< HEAD
+
 export default Navbar;
-=======
-export default Navbar;
->>>>>>> 4fb66d69a8b3b9d0fa81a0dc185eb9374b49bbf6
+
