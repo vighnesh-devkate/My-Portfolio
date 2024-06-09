@@ -1,9 +1,7 @@
 .home {
     position: relative;
-    height: calc(100vh - 100px); // Adjust height to consider the navbar height
+    min-height: calc(100vh - 100px); // Adjust height to consider the navbar height
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
     padding: 20px;
     overflow: hidden; // Hide overflow for background animation
@@ -99,9 +97,14 @@
     }
 }
 
+section {
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
 @media only screen and (max-width: 768px) {
     .home {
-        height: calc(100vh - 60px);
+        height: auto;
         padding: 10px;
 
         &__image-wrapper img {
@@ -110,16 +113,8 @@
         }
 
         &__text-wrapper h1 {
-            font-size: 2rem;
-            line-height: 2.5rem;
-        }
-
-        &__contact-me button {
-            font-size: 1.2rem;
-        }
-
-        &__social-media a {
-            font-size: 1.5rem;
+            font-size: 2rem; // Adjust for responsiveness
+            line-height: 2.5rem; // Adjust for responsiveness
         }
     }
 }

@@ -1,11 +1,16 @@
 import React from "react";
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { FaLinkedin, FaFacebook, FaInstagram, FaFileDownload } from 'react-icons/fa';
+import { FaLinkedin, FaFacebook, FaInstagram, FaFileDownload, FaGithub } from 'react-icons/fa';
 import { SiLeetcode } from 'react-icons/si';
 import './style.scss';
 import myImage from './vighnesh.jpeg';
 import { Animate } from "react-simple-animate";
+import About from '../about';
+import Career from '../resume';
+import Skills from '../skills';
+import Portfolio from '../portfolio';
+import Contact from '../contact';
 
 const Home = () => {
     const navigate = useNavigate();
@@ -49,7 +54,7 @@ const Home = () => {
                 transition={{ delay: 1, duration: 1.5 }}
             >
                 <button onClick={handleNavigateToContactMePage}>Hire me</button>
-                <a href="/resume.pdf" download="Vighnesh_Devkate_Resume.pdf">
+                <a href="/My-Portfolio/resume.pdf" download="Vighnesh_Devkate_Resume.pdf">
                     <button>
                         <FaFileDownload /> Download Resume
                     </button>
@@ -73,24 +78,30 @@ const Home = () => {
                 <a href="https://leetcode.com/u/Vighnesh16/" target="_blank" rel="noopener noreferrer">
                     <SiLeetcode />
                 </a>
+                <a href="https://github.com/vighnesh-devkate" target="_blank" rel="noopener noreferrer">
+                    <FaGithub />
+                </a>
             </motion.div>
-        <Animate
-          play
-          duration={1}
-          delay={0}
-          start={{
-            transform: "translateX(-200px)",
-          }}
-          end={{
-            transform: "translateX(0px)",
-          }}
-        >
-          
-       
-        <div className="contact__content__footer">
-          <p>&copy; 2024 Vighnesh. Made by Vighnesh.</p>
-        </div>
-        </Animate>
+            <About />
+            <Career />
+            <Skills />
+            <Portfolio />
+            <Contact />
+            <Animate
+                play
+                duration={1}
+                delay={0}
+                start={{
+                    transform: "translateX(-200px)",
+                }}
+                end={{
+                    transform: "translateX(0px)",
+                }}
+            >
+                <div className="contact__content__footer">
+                    <p>&copy; 2024 Vighnesh. Made by Vighnesh.</p>
+                </div>
+            </Animate>
         </section>
     );
 }
