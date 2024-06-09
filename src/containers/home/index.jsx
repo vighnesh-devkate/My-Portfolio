@@ -99,11 +99,19 @@ const Home = () => {
                 }}
             >
                 <div className="contact__content__footer">
+<<<<<<< HEAD
                     <p>Copyright &copy; 2024 Vighnesh Devkate All Rights Reserved.</p>
+=======
+                    <p>&copy; 2024 Vighnesh. Made by Vighnesh.</p>
+>>>>>>> 4fb66d69a8b3b9d0fa81a0dc185eb9374b49bbf6
                 </div>
             </Animate>
         </section>
     );
 }
 
+<<<<<<< HEAD
 export default Home;
+=======
+export default Home;
+>>>>>>> 4fb66d69a8b3b9d0fa81a0dc185eb9374b49bbf6

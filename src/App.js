@@ -14,9 +14,16 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+<<<<<<< HEAD
       <div className='App__main-page-content'>
         <Routes>
           <Route index path="/" element={<Home />} />
+=======
+      
+      <div className='App__main-page-content'>
+        <Routes>
+          <Route path="/" element={<Home />} />
+>>>>>>> 4fb66d69a8b3b9d0fa81a0dc185eb9374b49bbf6
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/skills" element={<Skills />} />

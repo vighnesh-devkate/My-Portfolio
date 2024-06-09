@@ -8,6 +8,10 @@
         margin: 0 auto;
         border-radius: 25px;
         border: 1px dashed var(--yellow-theme-main-color);
+<<<<<<< HEAD
+=======
+        text-align: center;
+>>>>>>> 4fb66d69a8b3b9d0fa81a0dc185eb9374b49bbf6
   
         li {
           font-size: 16px;
@@ -40,9 +44,15 @@
           height: 366px;
           cursor: pointer;
           position: relative;
+<<<<<<< HEAD
           
           &:hover .overlay{
               opacity: 1;
+=======
+  
+          &:hover .overlay {
+            opacity: 1;
+>>>>>>> 4fb66d69a8b3b9d0fa81a0dc185eb9374b49bbf6
           }
   
           &__img-wrapper {
@@ -60,6 +70,7 @@
           }
   
           .overlay {
+<<<<<<< HEAD
               position: absolute;
               top: 0;
               bottom: 0;
@@ -101,12 +112,55 @@
   
                   }
               }
+=======
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: 0.5s ease;
+            background-color: var(--yellow-theme-main-color);
+  
+            div {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              text-align: center;
+  
+              p {
+                color: #000000;
+                margin: 0px;
+                font-size: 4rem;
+                position: relative;
+                overflow: hidden;
+                white-space: nowrap;
+                animation: typingEffect 1s steps(30, end);
+              }
+  
+              button {
+                cursor: pointer;
+                margin-top: 16px;
+                padding: 10px 70px;
+                font-size: 2rem;
+                background: transparent;
+                color: #000;
+                border: 1.5px solid #000;
+                border-radius: 4px;
+                font-weight: 500;
+              }
+            }
+>>>>>>> 4fb66d69a8b3b9d0fa81a0dc185eb9374b49bbf6
           }
         }
       }
     }
   }
   
+<<<<<<< HEAD
   @media only screen and (max-width: 480px){
       .portfolio__content__filter > li{
           font-size: 11px;
@@ -148,4 +202,65 @@
   }
   
   
+=======
+  @media only screen and (max-width: 480px) {
+    .portfolio__content__filter > li {
+      font-size: 11px;
+    }
+  
+    .portfolio__content__cards {
+      grid-template-columns: repeat(1, 1fr);
+  
+      &__item {
+        height: auto;
+  
+        .overlay {
+          div > p {
+            font-size: 2rem;
+          }
+  
+          button {
+            padding: 10px 50px;
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+  
+  @media only screen and (min-width: 481px) and (max-width: 767px) {
+    .portfolio__content__filter > li {
+      font-size: 14px;
+    }
+  
+    .portfolio__content__cards {
+      grid-template-columns: repeat(2, 1fr);
+  
+      &__item {
+        height: auto;
+  
+        .overlay {
+          div > p {
+            font-size: 2.5rem;
+          }
+  
+          button {
+            padding: 10px 60px;
+            font-size: 1.8rem;
+          }
+        }
+      }
+    }
+  }
+  
+  @keyframes typingEffect {
+    from {
+      width: 0;
+    }
+  
+    to {
+      width: 100%;
+    }
+  }
+>>>>>>> 4fb66d69a8b3b9d0fa81a0dc185eb9374b49bbf6
   
