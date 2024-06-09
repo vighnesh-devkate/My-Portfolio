@@ -1,0 +1,97 @@
+.navbar {
+    background-color: var(--yellow-theme-nav-background-color);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: inherit;
+        padding: 0 20px;
+
+        &__logo {
+            color: var(--yellow-theme-main-color);
+            cursor: pointer;
+        }
+
+        &__menu {
+            display: flex;
+            list-style: none;
+            margin-left: auto;
+
+            &__item {
+                line-height: 40px;
+                margin-right: 1.5rem;
+                font-size: 1.6rem;
+
+                &::after {
+                    content: '';
+                    display: block;
+                    height: 3px;
+                    width: 0;
+                    background: transparent;
+                    transition: width 0.3s ease, background 0.3s ease;
+                }
+
+                &:hover::after {
+                    width: 100%;
+                    background: var(--yellow-theme-main-color);
+                }
+
+                &__links {
+                    color: var(--yellow-theme-main-color);
+                    text-decoration: none;
+                    padding: 0.5rem;
+                }
+            }
+        }
+    }
+}
+
+.nav-icon {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar__container__menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background: #181818;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.5s ease, visibility 0.5s ease;
+
+        &.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        &__item {
+            margin: 1rem 0;
+            width: 100%;
+            text-align: center;
+
+            &::after {
+                content: none; // Hide the hover effect for mobile view
+            }
+        }
+    }
+
+    .nav-icon {
+        display: block;
+        cursor: pointer;
+        color: var(--yellow-theme-main-color);
+        padding-right: 20px;
+    }
+}
