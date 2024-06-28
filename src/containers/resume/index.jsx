@@ -19,7 +19,7 @@ const Resume = () => {
                     <h3 className="timeline__experience__header-text">
                         Experience
                     </h3>
-                    <VerticalTimeline
+                    <VerticalTimeline 
                         layout={'1-column'}
                         lineColor="var(--yellow-theme-main-color)"
                     >

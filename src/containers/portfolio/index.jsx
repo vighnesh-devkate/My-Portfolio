@@ -6,6 +6,7 @@ import ImageThree from "../../images/plant.jpg";
 import ImageTwo from "../../images/mouse.jpg";
 import ImageFour from "../../images/mobile.jpg";
 import ImageFive from "../../images/voting.jpg";
+import ImagesSix from "../../images/ImageSix.jpg";
 import "./style.scss";
 
 const portfolioData = [
@@ -35,10 +36,17 @@ const portfolioData = [
   },
   {
     id: 3,
+    name: "Myntra Clone",
+    image: ImagesSix,
+    link: "https://myntra-clone-pied-omega.vercel.app/",
+  },
+  {
+    id: 3,
     name: "Online Voting System",
     image: ImageFive,
     link: "https://github.com/vighnesh-devkate/Online-voting-web-application-using-Django-framework",
   },
+ 
 ];
 
 const filterData = [
