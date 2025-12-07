@@ -54,7 +54,7 @@ const Home = () => {
                 transition={{ delay: 1, duration: 1.5 }}
             >
                 <button onClick={handleNavigateToContactMePage}>Hire me</button>
-                <a href="/My-Portfolio/resume.pdf" download="Vighnesh_Devkate_Resume.pdf">
+                <a href="resume.pdf" download="Vighnesh_Devkate_Resume.pdf">
                     <button>
                         <FaFileDownload /> Download Resume
                     </button>
